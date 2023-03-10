@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:background="@drawable/hoja_select"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_marginTop="8sp"
+    android:layout_marginLeft="50sp"
+    android:layout_marginRight="50sp"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/booksViewerBookname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing=".2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/Bookname"
+        android:inputType="text" />
+    <LinearLayout
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:id="@+id/AuthorS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:layout_marginStart="8sp"
+            android:textSize="14sp"
+            android:text="Author:" />
+        <EditText
+            android:id="@+id/booksViewerAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="#2FFB02FB"
+            android:textAlignment="center"
+            android:layout_marginStart="8sp"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Year:" />
+        <EditText
+            android:id="@+id/booksViewerYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:background="#2FFB02FB"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:layout_marginStart="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Price:" />
+        <EditText
+            android:id="@+id/booksViewerPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:background="#2FFB02FB"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="8sp"
+            android:textSize="14sp"
+            android:text="Quantity:" />
+        <EditText
+            android:id="@+id/booksViewerQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:background="#2FFB02FB"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            android:layout_marginStart="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Availability:" />
+        <RadioGroup
+            android:id="@+id/booksViewerAvil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="8sp">
+
+            <RadioButton
+                android:id="@+id/radio_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available" />
+
+            <RadioButton
+                android:id="@+id/radio_not_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Available" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:textSize="14sp"
+            android:text="Date:" />
+        <EditText
+            android:id="@+id/booksViewerDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="#2FFB02FB"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="date"
+            android:focusable="false"
+            android:layout_marginStart="8sp"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="8sp"
+            android:textSize="14sp"
+            android:text="ISBN:" />
+        <TextView
+            android:id="@+id/booksViewerISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:background="#2FFB02FB"
+            android:textColor="@color/black"
+            android:inputType=""
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="90sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/updatebutt"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/hoja_select"
+            android:text="@string/updatecolon"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/Deletebutt"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="70sp"
+            android:background="@drawable/hoja_select"
+            android:text="Delete"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</LinearLayout>
